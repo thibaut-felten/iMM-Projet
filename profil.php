@@ -41,7 +41,7 @@
                     <a class="nav-link active" href="profil.php">Profil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Aliments</a>
+                    <a class="nav-link" href="aliments.php">Aliments</a>
                 </li>
             </ul>
         </div>
