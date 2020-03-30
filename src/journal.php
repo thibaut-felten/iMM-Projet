@@ -22,6 +22,7 @@
 
 </head>
 <body>
+    <!-- Comment test 2-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">iMM</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +40,7 @@
                     <a class="nav-link" href="#">Profil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Aliments</a>
+                    <a class="nav-link" href="aliments.html">Aliments</a>
                 </li>
             </ul>
         </div>
