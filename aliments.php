@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Aliments</title>
-</head>
+<?php
+require_once("src/head.php");
+?>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">iMM</a>
