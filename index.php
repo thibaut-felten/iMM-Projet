@@ -39,10 +39,10 @@
                     <a class="nav-link" href="journal.php">Journal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="profil.php">Profil</a>
+                    <a class="nav-link" href="#">Profil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="aliments.html">Aliments</a>
+                    <a class="nav-link" href="aliments.php">Aliments</a>
                 </li>
             </ul>
         </div>
