@@ -33,13 +33,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Dashboard</a>
+                    <a class="nav-link active" href="index.php">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="journal.html">Journal</a>
+                    <a class="nav-link" href="journal.php">Journal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Profil</a>
+                    <a class="nav-link" href="profil.php">Profil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="aliments.html">Aliments</a>
