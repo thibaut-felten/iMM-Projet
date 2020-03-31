@@ -1,4 +1,24 @@
 <?php
+session_start();
+if(!(isset($_SESSION['pseudo']))){
+    $_SESSION['pseudo'] = "Invité";
+}
+if(!(isset($_SESSION['masse']))){
+    $_SESSION['masse'] = "60";
+}
+if(!(isset($_SESSION['actiPhysique']))){
+    $_SESSION['actiPhysique'] = "Normal";
+}
+
+if(isset($_POST['nom'])){
+    $_SESSION['pseudo'] = $_POST['nom'];
+}
+if(isset($_POST['masse'])){
+    $_SESSION['masse'] = $_POST['masse'];
+}
+if(isset($_POST['physique'])){
+    $_SESSION['actiPhysique'] = $_POST['physique'];
+}
 require_once("src/head.php");
 ?>
 
@@ -34,17 +54,17 @@ require_once("src/head.php");
                 Profil
             </div>
             <div class="card-body">
-                <form>
+                <form action="profil.php" method="post">
                     <div class="form-group row">
                         <label for="nom" class="col col-form-label">Pseudo</label>
                         <div class="col">
-                            <input type="text" class="form-control" id="nom" placeholder="Mon pseudo">
+                            <input type="text" class="form-control" name="nom" placeholder="Mon pseudo">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="masse" class="col col-form-label">Masse</label>
                         <div class="col">
-                            <select class="form-control" id="masse">
+                            <select class="form-control" name="masse">
                                 <option disabled selected hidden>Sélectionner</option>
                                 <?php
                                     for ($i=30; $i < 121; $i++) { 
@@ -57,7 +77,7 @@ require_once("src/head.php");
                     <div class="form-group row">
                         <label for="physique" class="col col-form-label">Activité physique</label>
                         <div class="col">
-                            <select class="form-control" id="physique">
+                            <select class="form-control" name="physique">
                                 <option disabled selected hidden>Sélectionner</option>
                                 <option value="Intense">Intense</option>
                                 <option value="Normal">Normal</option>

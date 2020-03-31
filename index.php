@@ -1,4 +1,14 @@
 <?php
+session_start();
+if(!(isset($_SESSION['pseudo']))){
+    $_SESSION['pseudo'] = "Invité";
+}
+if(!(isset($_SESSION['masse']))){
+    $_SESSION['masse'] = "60";
+}
+if(!(isset($_SESSION['actiPhysique']))){
+    $_SESSION['actiPhysique'] = "Normal";
+}
 require_once("src/head.php");
 ?>
 <body>
@@ -24,6 +34,12 @@ require_once("src/head.php");
             </ul>
         </div>
     </nav>
+    <div class="container mt-2">
+        <div class="row">
+            <h1>Bienvenue <?php echo $_SESSION['pseudo'];?></h1>
+        </div>
+    </div>
+
     <div class="container-fluid mt-2">
         <div class="row">
             <div id="cardChartCalorie" class="card cardChart">

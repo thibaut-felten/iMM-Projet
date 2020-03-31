@@ -1,4 +1,14 @@
 <?php
+session_start();
+if(!(isset($_SESSION['pseudo']))){
+    $_SESSION['pseudo'] = "Invité";
+}
+if(!(isset($_SESSION['masse']))){
+    $_SESSION['masse'] = "60";
+}
+if(!(isset($_SESSION['actiPhysique']))){
+    $_SESSION['actiPhysique'] = "Normal";
+}
 require_once("src/head.php");
 ?>
 <body>
