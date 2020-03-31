@@ -7,3 +7,23 @@
     max-width: 50%;
     margin: 1% auto;
 }
+
+#cardChartSucre{
+    min-width: 40%;
+    margin: 1% auto;
+}
+
+#cardChartSel{
+    min-width: 40%;
+    margin: 1% auto;
+}
+
+#cardChartTypeAliments{
+    min-width: 40%;
+    margin: 1% auto;
+}
+
+#cardChartCalorie{
+    min-width: 40%;
+    margin: 1% auto;
+}
