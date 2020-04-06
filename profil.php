@@ -1,17 +1,27 @@
 <?php
 session_start();
+
+//On pourrait discuter des données par défaut, elles n'existeraient pas en cas d'appli multi-utilisateurs
 if(!(isset($_SESSION['pseudo']))){
     $_SESSION['pseudo'] = "Invité";
 }
 if(!(isset($_SESSION['masse']))){
     $_SESSION['masse'] = "60";
 }
+if(!(isset($_SESSION['sexe']))){
+    $_SESSION['sexe'] = "Homme";
+}
 if(!(isset($_SESSION['actiPhysique']))){
     $_SESSION['actiPhysique'] = "Normal";
 }
 
+
 if(isset($_POST['nom'])){
     $_SESSION['pseudo'] = $_POST['nom'];
+}
+
+if(isset($_POST['sexe'])){
+    $_SESSION['sexe'] = $_POST['sexe'];
 }
 if(isset($_POST['masse'])){
     $_SESSION['masse'] = $_POST['masse'];
@@ -26,10 +36,7 @@ require_once("src/head.php");
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.php">iMM</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="index.php">Dashboard</a>
@@ -59,6 +66,16 @@ require_once("src/head.php");
                         <label for="nom" class="col col-form-label">Pseudo</label>
                         <div class="col">
                             <input type="text" class="form-control" name="nom" placeholder="Mon pseudo">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="sexe" class="col col-form-label">Sexe</label>
+                        <div class="col">
+                            <select class="form-control" name="physique">
+                                <option disabled selected hidden>Sélectionner</option>
+                                <option value="Homme">Homme</option>
+                                <option value="Femme">Femme</option>
+                            </select>
                         </div>
                     </div>
                     <div class="form-group row">

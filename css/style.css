@@ -9,21 +9,31 @@
 }
 
 #cardChartSucre{
-    min-width: 40%;
+    max-width: 40%;
     margin: 1% auto;
 }
 
 #cardChartSel{
-    min-width: 40%;
+    max-width: 40%;
     margin: 1% auto;
 }
 
-#cardChartTypeAliments{
-    min-width: 40%;
+#cardTableApport{
+    max-width: 40%;
     margin: 1% auto;
 }
 
 #cardChartCalorie{
-    min-width: 40%;
+    max-width: 40%;
+    margin: 1% auto;
+}
+
+#cardChartProteines{
+    max-width: 40%;
+    margin: 1% auto;
+}
+
+#cardChartFat{
+    max-width: 40%;
     margin: 1% auto;
 }
